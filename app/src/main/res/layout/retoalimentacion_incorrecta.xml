@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/fondo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangulo2"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtRespuesta"
+            android:text="Respuesta Incorrecta"
+            android:textSize="32dp"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            />
+
+        <ImageButton
+            android:id="@+id/imgSonido"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/sonido"
+            android:layout_below="@+id/txtRespuesta"
+            android:layout_marginLeft="180dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/sorry"
+            android:layout_gravity="center"
+            android:layout_below="@+id/imgSonido"
+            android:layout_marginLeft="65dp"
+            />
+
+        <TextView
+            android:id="@+id/txtFeliciades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgLogo"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="La respuesta correcta era:"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            />
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cornerRadius="15dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/boton_custom"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:text="Continuar"
+        android:textSize="20dp"
+        android:onClick="Continuar"
+        android:layout_marginTop="150dp"/>
+
+
+</LinearLayout>

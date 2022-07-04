@@ -4,10 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/eidig/AndroidStudioProjects/Jugabilidad2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/lexto/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/drawable/boton_custom.xml" value="0.213" />
+        <entry key="..\:/Users/lexto/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/drawable/rectangulo.xml" value="0.213" />
+        <entry key="..\:/Users/lexto/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/drawable/rectangulo2.xml" value="0.213" />
+        <entry key="..\:/Users/lexto/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/lexto/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/layout/retoalimentacion_incorrecta.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/lexto/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/layout/retroalimentacion.xml" value="0.33" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
