@@ -38,95 +38,25 @@
         android:layout_below="@id/pgrPareo"
         android:layout_centerHorizontal="true"/>
 
-    <Button
-        android:id="@+id/btnPareo1"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lstPareo1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/lblTitulo"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="100dp" />
-
-    <Button
-        android:id="@+id/btnPareo2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnPareo1"
-        android:layout_marginLeft="30dp" />
-
-    <Button
-        android:id="@+id/btnPareo3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnPareo2"
-        android:layout_marginLeft="30dp" />
-
-
-    <Button
-        android:id="@+id/btnPareo4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnPareo3"
-        android:layout_marginLeft="30dp"
-        />
-
-    <Button
-        android:id="@+id/btnPareo5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnPareo4"
-        android:layout_marginLeft="30dp"
-        />
-
-    <Button
-        android:id="@+id/btnPareo6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/lblTitulo"
+        android:padding="10dp"
+        android:layout_below="@+id/lblTitulo"
         android:layout_marginTop="100dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="30dp"/>
+        android:layout_marginLeft="50dp"
+        />
 
-    <Button
-        android:id="@+id/btnPareo7"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lstPareo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btnPareo6"
+        android:padding="10dp"
+        android:layout_below="@+id/lblTitulo"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="30dp"/>
-
-    <Button
-        android:id="@+id/btnPareo8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnPareo7"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="30dp"/>
-
-    <Button
-        android:id="@+id/btnPareo9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnPareo8"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="30dp"/>
-
-    <Button
-        android:id="@+id/btnPareo10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnPareo9"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="30dp"/>
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
-        android:text="Confirmar"
-        android:minWidth="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="50dp"
         />
 
 </RelativeLayout>
