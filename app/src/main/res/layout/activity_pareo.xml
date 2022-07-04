@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pareo"
+    android:orientation="vertical">
+
+    <ImageView
+        android:src="@drawable/house"
+        android:layout_marginTop="20dp"
+        android:id="@+id/imgPareo1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:nextFocusLeft="@id/pgrPareo"
+        android:layout_marginLeft="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/pgrPareo"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/imgPareo1"
+        android:max="10"
+        android:minWidth="300dp"
+        android:minHeight="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eligé la combinación correcta"
+        android:layout_below="@id/pgrPareo"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnPareo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTitulo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp" />
+
+    <Button
+        android:id="@+id/btnPareo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPareo1"
+        android:layout_marginLeft="30dp" />
+
+    <Button
+        android:id="@+id/btnPareo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPareo2"
+        android:layout_marginLeft="30dp" />
+
+
+    <Button
+        android:id="@+id/btnPareo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPareo3"
+        android:layout_marginLeft="30dp"
+        />
+
+    <Button
+        android:id="@+id/btnPareo5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPareo4"
+        android:layout_marginLeft="30dp"
+        />
+
+    <Button
+        android:id="@+id/btnPareo6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTitulo"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"/>
+
+    <Button
+        android:id="@+id/btnPareo7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPareo6"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"/>
+
+    <Button
+        android:id="@+id/btnPareo8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPareo7"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"/>
+
+    <Button
+        android:id="@+id/btnPareo9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPareo8"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"/>
+
+    <Button
+        android:id="@+id/btnPareo10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPareo9"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="Confirmar"
+        android:minWidth="200dp"
+        />
+
+</RelativeLayout>
