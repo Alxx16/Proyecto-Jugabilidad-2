@@ -18,24 +18,22 @@
         android:paddingBottom="15dp">
 
         <TextView
+            android:id="@+id/txtRespuesta_incorrecta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtRespuesta"
-            android:text="Respuesta Incorrecta"
-            android:textSize="32dp"
             android:layout_marginTop="15dp"
+            android:text="Respuesta Incorrecta"
             android:textAlignment="center"
             android:textColor="@color/black"
-            />
+            android:textSize="32dp" />
 
         <ImageButton
-            android:id="@+id/imgSonido"
+            android:id="@+id/imgSonido_incorrecto"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:src="@drawable/sonido"
-            android:layout_below="@+id/txtRespuesta"
+            android:layout_below="@+id/txtRespuesta_incorrecta"
             android:layout_marginLeft="180dp"
-            />
+            android:src="@drawable/sonido" />
 
         <ImageView
             android:id="@+id/imgLogo"
@@ -43,22 +41,21 @@
             android:layout_height="250dp"
             android:src="@drawable/sorry"
             android:layout_gravity="center"
-            android:layout_below="@+id/imgSonido"
+            android:layout_below="@+id/imgSonido_incorrecto"
             android:layout_marginLeft="65dp"
             />
 
         <TextView
-            android:id="@+id/txtFeliciades"
+            android:id="@+id/txtFelicidades_incorrecta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imgLogo"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
             android:text="La respuesta correcta era:"
-            android:textSize="20dp"
             android:textAlignment="center"
             android:textColor="@color/black"
-            />
+            android:textSize="20dp" />
 
 
 
@@ -74,8 +71,8 @@
         android:layout_gravity="center"
         android:text="Continuar"
         android:textSize="20dp"
-        android:onClick="Continuar"
-        android:layout_marginTop="150dp"/>
+        android:layout_marginTop="150dp"
+        android:id="@+id/jugabilidad2_retro_incorrecta_btn"/>
 
 
 </LinearLayout>

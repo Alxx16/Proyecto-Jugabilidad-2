@@ -4,12 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/eidig/AndroidStudioProjects/Jugabilidad2/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/lexto/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/drawable/boton_custom.xml" value="0.213" />
-        <entry key="..\:/Users/lexto/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/drawable/rectangulo.xml" value="0.213" />
-        <entry key="..\:/Users/lexto/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/drawable/rectangulo2.xml" value="0.213" />
-        <entry key="..\:/Users/lexto/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
-        <entry key="..\:/Users/lexto/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/layout/retoalimentacion_incorrecta.xml" value="0.358695652173913" />
-        <entry key="..\:/Users/lexto/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/layout/retroalimentacion.xml" value="0.33" />
+        <entry key="..\:/Users/jairs/OneDrive/Escritorio/Semestral de DSVI/Proyecto-Jugabilidad-2/app/src/main/res/layout/activity_jugabilidad2_retroalimentacion.xml" value="0.2" />
+        <entry key="..\:/Users/jairs/OneDrive/Escritorio/Semestral de DSVI/Proyecto-Jugabilidad-2/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/jairs/OneDrive/Escritorio/Semestral de DSVI/Proyecto-Jugabilidad-2/app/src/main/res/layout/retoalimentacion_incorrecta.xml" value="0.25" />
+        <entry key="..\:/Users/jairs/OneDrive/Escritorio/Semestral de DSVI/Proyecto-Jugabilidad-2/app/src/main/res/layout/retroalimentacion.xml" value="0.2" />
       </map>
     </option>
   </component>
