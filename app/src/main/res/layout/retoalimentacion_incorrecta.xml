@@ -17,6 +17,13 @@
         android:layout_marginRight="20dp"
         android:paddingBottom="15dp">
 
+        <ImageButton
+            android:id="@+id/imgSonido_incorrecto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:src="@drawable/audio_negro_icono" />
+
         <TextView
             android:id="@+id/txtRespuesta_incorrecta"
             android:layout_width="match_parent"
@@ -25,31 +32,14 @@
             android:text="Respuesta Incorrecta"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="32dp" />
-
-        <ImageButton
-            android:id="@+id/imgSonido_incorrecto"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_below="@+id/txtRespuesta_incorrecta"
-            android:layout_marginLeft="180dp"
-            android:src="@drawable/sonido" />
-
-        <ImageView
-            android:id="@+id/imgLogo"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:src="@drawable/sorry"
-            android:layout_gravity="center"
-            android:layout_below="@+id/imgSonido_incorrecto"
-            android:layout_marginLeft="65dp"
-            />
+            android:textSize="32dp"
+            android:layout_below="@+id/imgSonido_incorrecto"/>
 
         <TextView
             android:id="@+id/txtFelicidades_incorrecta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imgLogo"
+            android:layout_below="@+id/txtRespuesta_incorrecta"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
             android:text="La respuesta correcta era:"
@@ -61,6 +51,16 @@
 
     </RelativeLayout>
 
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/respuesta_incorrecta"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="15dp"
+        />
+
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
         android:layout_gravity="center"
         android:text="Continuar"
         android:textSize="20dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="105dp"
         android:id="@+id/jugabilidad2_retro_incorrecta_btn"/>
 
 
