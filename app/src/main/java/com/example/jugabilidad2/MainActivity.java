@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void InicializarControles() {
         jugabilidad2_txtPregunta = (TextView)findViewById(R.id.jugabilidad2_txtPregunta);
-        sentenceLine = (FlowLayout)findViewById(R.id.sentence_line);
+        sentenceLine = (FlowLayout)findViewById(R.id.jugabilidad2_sentence_line);
 
 
     }

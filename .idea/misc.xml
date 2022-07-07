@@ -3,16 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/drawable/cuadro_de_palabra.xml" value="0.1415" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/drawable/custom_word_border.xml" value="0.139" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/drawable/jugabilidad2_botonshape.xml" value="0.1415" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/layout/cuadro_de_palabra.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/layout/jugabilidad2_parte_cuerpo.xml" value="0.26851851851851855" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/layout/jugabilidad2_parte_superior.xml" value="0.25" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/layout/modo1_parte_cuerpo.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/layout/modo_parte_superior.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/eidig/AndroidStudioProjects/Jugabilidad2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/eidig/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/drawable/boton.xml" value="0.1825" />
+        <entry key="..\:/Users/eidig/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/drawable/jugabilidad2_botonshape.xml" value="0.1825" />
         <entry key="..\:/Users/eidig/AndroidStudioProjects/Proyecto-Jugabilidad-2/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>
