@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".MainActivity"
     android:background="@drawable/fondo" ><!--Link -->
 
-
+    <!-- Home -->
     <ImageButton
         android:id="@+id/jugabilidad2_imbHome"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:background="@drawable/home_icono" /> <!--Link -->
 
-
+    <!-- Bara de Progreso -->
     <ProgressBar
         android:id="@+id/jugabilidad2_pgrBar"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
@@ -24,8 +25,9 @@
         android:layout_toRightOf="@id/jugabilidad2_imbHome"
         android:max="10"
         android:minWidth="50dp"
-        android:minHeight="50dp"></ProgressBar>
+        android:minHeight="50dp"/>
 
+    <!-- Titulo -->
     <TextView
         android:id="@+id/jugabilidad2_txtTitulo"
         android:layout_width="match_parent"
@@ -39,6 +41,8 @@
         android:textColor="@color/white"
         android:textSize="35dp" />
 
+
+    <!-- Imagen de Mascota -->
     <ImageView
         android:id="@+id/jugabilidad2_imvMascota"
         android:layout_width="160dp"
@@ -47,6 +51,7 @@
         android:layout_centerInParent="true"
         android:src="@drawable/luna_mascota" />
 
+    <!-- Boton para Sonido -->
     <ImageButton
         android:id="@+id/jugabilidad2_imvVoz"
         android:layout_width="26dp"
@@ -57,6 +62,7 @@
         android:layout_toLeftOf="@id/jugabilidad2_txtPregunta"
         android:background="@drawable/audio_blanco_icono" />
 
+    <!-- Preguntas -->
     <TextView
         android:id="@+id/jugabilidad2_txtPregunta"
         android:layout_width="wrap_content"
@@ -68,6 +74,8 @@
         android:textColor="@color/white"
         android:textSize="28dp" />
 
+
+    <!-- Espacio para respuestas -->
     <FrameLayout
         android:id="@+id/jugabilidad2_fmlRespuestas"
         android:layout_below="@+id/jugabilidad2_txtPregunta"
@@ -76,10 +84,10 @@
         android:layout_margin="15dp">
 
         <com.nex3z.flowlayout.FlowLayout
-            android:id="@+id/sentence_line"
+            android:id="@+id/jugabilidad2_sentence_line"
             android:layout_width="match_parent"
-            android:layout_height="115dp"
-            app:flFlow="true"/>
+            android:layout_height="match_parent"
+            app:flFlow="true" />
 
         <View
             style="@style/split_line_horizontal"
@@ -90,11 +98,18 @@
             android:layout_marginTop="105dp" />
     </FrameLayout>
 
+    <!-- Boton para continuar -->
     <Button
-        android:id="@+id/btnConfirmar"
+        android:id="@+id/jugabilidad2_btnConfirmar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="CONFIRMAR"
-        android:layout_alignParentBottom="true"/>
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/poppins_bold"
+        app:backgroundTint="@null"
+        android:background="@drawable/jugabilidad2_botonshape"/>
 
 </RelativeLayout>
