@@ -1,17 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/fondo" ><!--Link -->
+
+
+    <ImageButton
+        android:id="@+id/jugabilidad2_imbHome"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/home_icono" /> <!--Link -->
+
+
+    <ProgressBar
+        android:id="@+id/jugabilidad2_pgrBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/jugabilidad2_imbHome"
+        android:max="10"
+        android:minWidth="50dp"
+        android:minHeight="50dp"></ProgressBar>
 
     <TextView
+        android:id="@+id/jugabilidad2_txtTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Actualizando"
-        android:textSize="50dp"/>
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/jugabilidad2_pgrBar"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Arma la Respuesta"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35dp" />
 
+    <ImageView
+        android:id="@+id/jugabilidad2_imvMascota"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/jugabilidad2_txtTitulo"
+        android:layout_centerInParent="true"
+        android:src="@drawable/luna_mascota" />
 
+    <ImageButton
+        android:id="@+id/jugabilidad2_imvVoz"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_below="@id/jugabilidad2_imvMascota"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/jugabilidad2_txtPregunta"
+        android:background="@drawable/audio_blanco_icono" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/jugabilidad2_txtPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_below="@id/jugabilidad2_imvMascota"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Pregunta"
+        android:textColor="@color/white"
+        android:textSize="28dp" />
+
+    <FrameLayout
+        android:id="@+id/jugabilidad2_fmlRespuestas"
+        android:layout_below="@+id/jugabilidad2_txtPregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <com.nex3z.flowlayout.FlowLayout
+            android:id="@+id/sentence_line"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            app:flFlow="true"/>
+
+        <View
+            style="@style/split_line_horizontal"
+            android:layout_marginTop="50dp" />
+
+        <View
+            style="@style/split_line_horizontal"
+            android:layout_marginTop="105dp" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONFIRMAR"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
