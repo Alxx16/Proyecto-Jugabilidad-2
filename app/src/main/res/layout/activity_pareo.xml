@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Pareo"
-    android:orientation="vertical">
+    tools:context=".PareoActivity"
+    android:orientation="vertical"
+    android:background="@drawable/ic_fondo">
 
     <ImageView
-        android:src="@drawable/house"
-        android:layout_marginTop="20dp"
         android:id="@+id/imgPareo1"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         android:nextFocusLeft="@id/pgrPareo"
-        android:layout_marginLeft="20dp"/>
+        android:src="@drawable/ic_home_icono" />
 
     <ProgressBar
         android:id="@+id/pgrPareo"
@@ -27,36 +28,108 @@
         android:minWidth="300dp"
         android:minHeight="50dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"/>
+        android:layout_marginLeft="10dp"
+        android:progressBackgroundTint="@color/white"/>
 
     <TextView
         android:id="@+id/lblTitulo"
-        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Eligé la combinación correcta"
         android:layout_below="@id/pgrPareo"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Eligé la combinación correcta"
+        android:textSize="30dp"
+        android:textColor="@color/white" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/lstPareo1"
+    <Button
+        android:id="@+id/btnPareo1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:layout_below="@+id/lblTitulo"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="50dp"
+        android:layout_below="@id/lblTitulo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp" />
+
+    <Button
+        android:id="@+id/btnPareo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPareo1"
+        android:layout_marginLeft="30dp" />
+
+    <Button
+        android:id="@+id/btnPareo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPareo2"
+        android:layout_marginLeft="30dp" />
+
+
+    <Button
+        android:id="@+id/btnPareo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPareo3"
+        android:layout_marginLeft="30dp"
         />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/lstPareo2"
+    <Button
+        android:id="@+id/btnPareo5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:layout_below="@+id/lblTitulo"
-        android:layout_alignParentRight="true"
+        android:layout_below="@id/btnPareo4"
+        android:layout_marginLeft="30dp" />
+
+    <Button
+        android:id="@+id/btnPareo6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTitulo"
         android:layout_marginTop="100dp"
-        android:layout_marginRight="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"/>
+
+    <Button
+        android:id="@+id/btnPareo7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPareo6"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"/>
+
+    <Button
+        android:id="@+id/btnPareo8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPareo7"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"/>
+
+    <Button
+        android:id="@+id/btnPareo9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPareo8"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"/>
+
+    <Button
+        android:id="@+id/btnPareo10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPareo9"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"/>
+
+    <Button
+        android:id="@+id/btnPareoSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGUIENTE"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+
         />
 
 </RelativeLayout>
