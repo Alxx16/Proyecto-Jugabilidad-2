@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /*private class TouchListener implements View.OnTouchListener{
+    private class TouchListener implements View.OnTouchListener{
         @Override
         public boolean onTouch(View view, MotionEvent motionEvent){
             if(motionEvent.getAction() == MotionEvent.ACTION_DOWN && !vistaPalabras.empty()){
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             }
             return false;
         }
-    }*/
+    }
 
 
     /*private void initData() {
