@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    tools:context=".MainActivity"
+    tools:context=".Jugabilidad2_Modo3"
     android:background="@drawable/fondo" ><!--Link -->
 
     <!-- Home -->
@@ -81,7 +81,7 @@
         android:layout_below="@+id/jugabilidad2_txtPregunta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp">
+        android:layout_margin="7dp">
 
         <com.nex3z.flowlayout.FlowLayout
             android:id="@+id/jugabilidad2_sentence_line"
@@ -99,6 +99,14 @@
     </FrameLayout>
 
     <!-- Boton para continuar -->
+
+    <GridView
+        android:id="@+id/jugabilidad2_grdvPalabras"
+        android:layout_width="wrap_content"
+        android:layout_height="137dp"
+        android:layout_below="@id/jugabilidad2_fmlRespuestas"
+        android:layout_marginTop="20dp"></GridView>
+
     <Button
         android:id="@+id/jugabilidad2_btnConfirmar"
         android:layout_width="match_parent"
@@ -110,6 +118,6 @@
         android:layout_margin="20dp"
         android:fontFamily="@font/poppins_bold"
         app:backgroundTint="@null"
-        android:background="@drawable/jugabilidad2_botonshape"/>
+        android:background="@drawable/shape_jugabilidad2_bntconfirmar"/>
 
 </RelativeLayout>
