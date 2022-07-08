@@ -1,19 +1,11 @@
-package com.example.jugabilidad2.Entidades;
+package com.example.jugabilidad2.Entidades.Reponse;
 
-public class Respuestas {
+public class ResponseRespuestas {
     private int id;
     private int pregunta_id;
     private String opcion_resp;
     private String retroalimentacion;
     private String respuesta;
-
-    public Respuestas(int id, int pregunta_id, String opcion_resp, String retroalimentacion, String respuesta) {
-        this.id = id;
-        this.pregunta_id = pregunta_id;
-        this.opcion_resp = opcion_resp;
-        this.retroalimentacion = retroalimentacion;
-        this.respuesta = respuesta;
-    }
 
     public int getId() {
         return id;
@@ -47,5 +39,4 @@ public class Respuestas {
     public void setRespuesta(String respuesta) {
         this.respuesta = respuesta;
     }
-
 }
