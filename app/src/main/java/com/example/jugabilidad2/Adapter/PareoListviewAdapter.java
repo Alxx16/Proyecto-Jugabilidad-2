@@ -25,14 +25,16 @@ public class PareoListviewAdapter extends ArrayAdapter {
 
         this.opciones = datos;
     }
-
+    //#Adaptador de vista del xml pareolistview_template
     public View getView(int position, View v, ViewGroup viewGrou){
         LayoutInflater inflater = LayoutInflater.from(getContext());
         View item = inflater.inflate(R.layout.pareolistview_template,null);
-
+        //#Agregar texto al template
         TextView texto = (TextView)item.findViewById(R.id.lblPareoTemplate);
         texto.setText(opciones.get(position).getTexto());
-
+        //#Agregar audio al template
+        TextView texto2 = (TextView)item.findViewById(R.id.lblPareoAudio);
+        texto2.setText(opciones.get(position).getAudio());
         return item;
     }
 }

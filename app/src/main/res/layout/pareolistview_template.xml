@@ -5,9 +5,18 @@
 
     <TextView
         android:id="@+id/lblPareoTemplate"
-        android:layout_width="100dp"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
         android:text="aaaaaaaaa"
-        android:background="@color/white"/>
+        android:padding="2dp"
+        android:background="@drawable/shape_jugabilidad2_general"/>
+
+    <TextView
+        android:id="@+id/lblPareoAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
 
 </LinearLayout>

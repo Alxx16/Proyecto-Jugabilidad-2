@@ -23,113 +23,65 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
         android:layout_toRightOf="@+id/imgPareo1"
-        android:max="10"
+        android:indeterminateDrawable="@drawable/progress_bar_jugabilidades"
+        android:max="11"
+        android:min="1"
         android:minWidth="300dp"
         android:minHeight="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:progressBackgroundTint="@color/white"/>
+
+        />
 
     <TextView
         android:id="@+id/lblTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/pgrPareo"
+        android:layout_below="@id/imgPareo1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="Eligé la combinación correcta"
-        android:textSize="30dp"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:textSize="30dp" />
 
-    <Button
-        android:id="@+id/btnPareo1"
-        android:layout_width="wrap_content"
+    <ListView
+        android:id="@+id/lstPareo1"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/lblTitulo"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="100dp" />
+        android:layout_marginTop="20dp"
+        android:background="#00000000"
+        android:backgroundTint="@color/white"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="20dp" />
 
-    <Button
-        android:id="@+id/btnPareo2"
-        android:layout_width="wrap_content"
+    <ListView
+        android:id="@+id/lstPareo2"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btnPareo1"
-        android:layout_marginLeft="30dp" />
-
-    <Button
-        android:id="@+id/btnPareo3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnPareo2"
-        android:layout_marginLeft="30dp" />
-
-
-    <Button
-        android:id="@+id/btnPareo4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnPareo3"
-        android:layout_marginLeft="30dp"
-        />
-
-    <Button
-        android:id="@+id/btnPareo5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnPareo4"
-        android:layout_marginLeft="30dp" />
-
-    <Button
-        android:id="@+id/btnPareo6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="20dp"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/white"
         android:layout_below="@id/lblTitulo"
-        android:layout_marginTop="100dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="30dp"/>
-
-    <Button
-        android:id="@+id/btnPareo7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnPareo6"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="30dp"/>
-
-    <Button
-        android:id="@+id/btnPareo8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnPareo7"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="30dp"/>
-
-    <Button
-        android:id="@+id/btnPareo9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnPareo8"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="30dp"/>
-
-    <Button
-        android:id="@+id/btnPareo10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnPareo9"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="30dp"/>
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:cacheColorHint="#00000000"/>
 
     <Button
         android:id="@+id/btnPareoSiguiente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SIGUIENTE"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
-
+        android:enabled="false"
+        android:visibility="invisible"
+        android:text="SIGUIENTE"
         />
 
 </RelativeLayout>

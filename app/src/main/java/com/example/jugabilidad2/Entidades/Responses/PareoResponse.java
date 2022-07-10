@@ -6,6 +6,7 @@ public class PareoResponse {
     private int tematica_id;
     private int orden_pareo;
     private String texto;
+    private String audio;
 
     public int getPregunta_id() {
         return pregunta_id;
@@ -38,4 +39,8 @@ public class PareoResponse {
     public void setTexto(String texto) {
         this.texto = texto;
     }
+
+    public String getAudio() { return audio; }
+
+    public void setAudio(String audio) { this.audio = audio; }
 }

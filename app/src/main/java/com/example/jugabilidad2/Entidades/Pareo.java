@@ -12,28 +12,40 @@ import com.example.jugabilidad2.Helpers.DbHelper;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Pareo {
 
-    public Pareo(int pregunta_id, int tematica_id, int orden_pareo, String texto) {
+    private int pregunta_id;
+    private int tematica_id;
+    private int orden_pareo;
+    private String texto;
+    private String audio;
+
+    public Pareo(int pregunta_id, int tematica_id, int orden_pareo, String texto, String audio) {
         this.pregunta_id = pregunta_id;
         this.tematica_id = tematica_id;
         this.orden_pareo = orden_pareo;
         this.texto = texto;
+        this.audio = audio;
     }
 
-    public Pareo(String texto) {
+    public Pareo(String texto, String audio) {
         this.texto = texto;
+        this.audio = audio;
     }
 
     public Pareo() {
 
     }
 
-    private int pregunta_id;
-    private int tematica_id;
-    private int orden_pareo;
-    private String texto;
+    public String getAudio() {
+        return audio;
+    }
+
+    public void setAudio(String audio) {
+        this.audio = audio;
+    }
 
     public int getPregunta_id() {
         return pregunta_id;
@@ -73,16 +85,17 @@ public class Pareo {
             SQLiteDatabase db = dbHelper.getWritableDatabase();
             //Cursor cursor = db.rawQuery("Select * FROM pareo",null);
             if(db!= null){
-                if(DatabaseUtils.queryNumEntries(db,"pareo")==0){
+                //if(DatabaseUtils.queryNumEntries(db,"pareo")==0){
                 ContentValues contentValues = new ContentValues();
                 contentValues.put("pregunta_id",this.getPregunta_id());
                 contentValues.put("tematica_id",this.getTematica_id());
                 contentValues.put("orden_pareo",this.getOrden_pareo());
                 contentValues.put("texto",this.getTexto());
+                contentValues.put("audio",this.getAudio());
                 //System.out.println("ENTROOOOOOOOOOOOOOOOOOOOOOO");
                 db.insert("pareo",null,contentValues);
                 return true;
-                }
+                //}
             }
         }catch (Exception e){
             Toast.makeText(context,"Error en insercion =>"+e.getMessage(),Toast.LENGTH_LONG).show();
@@ -90,30 +103,60 @@ public class Pareo {
         return false;
     }
 
+    public int obtenerIdPreguntas(Context context){
+        List<Integer> idPreguntas = new ArrayList<>();
+        int idAleatorio;
+        try{//Validacion de que campos en nullo o vacio
+            DbHelper dbHelper = new DbHelper(context,"frograming");
+            SQLiteDatabase db = dbHelper.getReadableDatabase();
+            if(db!= null){
+                String[] campos = new String[]{"pregunta_id"};
+                //TRAER TEMATICA A TRAVES DE SHAREDPREFERENCES
+                Cursor cursor = db.query("pareo",campos,"tematica_id = " + 1,null,"pregunta_id",null,null);
+                if(cursor.moveToFirst()){
+                    do {
+                        idPreguntas.add(cursor.getInt(0));
+                    }while (cursor.moveToNext());
+                }
+            }
+        }catch (Exception e){
+            Toast.makeText(context,"Errocito en select de ID PREGUNTAS =>"+e.getMessage(),Toast.LENGTH_LONG).show();
+        }
+        //RANDOMIZEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEER
+        Random rand = new Random();
+        idAleatorio=idPreguntas.get(rand.nextInt(idPreguntas.size()));
+        return idAleatorio;
+    }
+    //#Método encargado de obtener todos las filas del pareo, según el id de pregunta que este asignada al parametro
     public List<Pareo> obtenerPareo(int pregunta,Context context){
-        List<Pareo> pareo = new ArrayList<>();
+        List<Pareo> pareoE = new ArrayList<>();
         try{
             DbHelper dbHelper = new DbHelper(context,"frograming");
             SQLiteDatabase db = dbHelper.getReadableDatabase();
             if(db!=null){
-                String[] campos = new String[]{"texto"};
-                Cursor cursor = db.query("pareo",campos,"pregunta_id= "+pregunta,null,null,null,null,null);
+                //Consulta que obtiene el texto y audio en la tabla pareo, según el id de pregunta del parametro
+                String[] campos = new String[]{"texto","audio"};
+                Cursor cursor = db.query("pareo",campos,"pregunta_id= "+pregunta ,null,null,null,null,"10");
                 if(cursor.moveToFirst()){
                     do {
-                        Pareo pareoE = new Pareo(
-                                cursor.getString(0)
+                        //#Asignar texto y audio al constructor de la clase Pareo(Entidad)
+                        Pareo pareo = new Pareo(
+                               cursor.getString(0),
+                                cursor.getString(1)
                         );
-                        pareo.add(pareoE);
+                        //#agregar datos cargados en el constructor de Pareo(Entidad) a la lista de tipo pareo
+                        pareoE.add(pareo);
                     }while (cursor.moveToNext());
                 }
             }
         }catch (Exception e){
             Toast.makeText(context,"Error en obtener datos de pareo =>"+e.getMessage(),Toast.LENGTH_LONG).show();
         }
-        return pareo;
+        //#Retornar lista cargada a la clase PareoActivity
+        return pareoE;
     }
-
-    public int compararPareo(String texto,Context context){
+    //#Método encargado de obtener el id de la opción seleccionada por el texto en PareoActivity
+    public int obtenerIdPareo(String texto, Context context){
         int id = 0;
         try{
             DbHelper dbHelper = new DbHelper(context,"frograming");

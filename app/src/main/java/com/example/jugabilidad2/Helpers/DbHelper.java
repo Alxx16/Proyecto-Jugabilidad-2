@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DbHelper extends SQLiteOpenHelper {
 
-    private String pareo = "CREATE TABLE pareo (id INTEGER PRIMARY KEY AUTOINCREMENT,pregunta_id TEXT ,tematica_id TEXT, orden_pareo INTEGER, texto TEXT)";
+    private String pareo = "CREATE TABLE pareo (id INTEGER PRIMARY KEY AUTOINCREMENT,pregunta_id TEXT ,tematica_id TEXT, orden_pareo INTEGER, texto TEXT,audio TEXT)";
 
     public DbHelper(Context context, String dbName){
         super(context,dbName,null, 1);
