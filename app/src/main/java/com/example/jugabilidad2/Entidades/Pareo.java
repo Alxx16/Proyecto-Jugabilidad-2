@@ -103,6 +103,7 @@ public class Pareo {
         return false;
     }
 
+    /*#Método utilizado a través de la utilización de la tematica por shared preferences
     public int obtenerIdPreguntas(Context context){
         List<Integer> idPreguntas = new ArrayList<>();
         int idAleatorio;
@@ -126,7 +127,8 @@ public class Pareo {
         Random rand = new Random();
         idAleatorio=idPreguntas.get(rand.nextInt(idPreguntas.size()));
         return idAleatorio;
-    }
+    }*/
+
     //#Método encargado de obtener todos las filas del pareo, según el id de pregunta que este asignada al parametro
     public List<Pareo> obtenerPareo(int pregunta,Context context){
         List<Pareo> pareoE = new ArrayList<>();

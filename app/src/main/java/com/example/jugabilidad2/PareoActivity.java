@@ -37,7 +37,7 @@ public class PareoActivity extends AppCompatActivity {
     private ProgressBar prgbar;
     private int idPareo1,idPareo2,avance=0,idPreguntaPareo;
     private String opcPareo1,opcPareo2;
-    private List<Integer> numerosPareo = new ArrayList<Integer>();;
+    private List<Integer> numerosPareo = new ArrayList<Integer>();
 
 
     @Override
@@ -45,13 +45,12 @@ public class PareoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pareo);
         //#TU TE ENCARGASTE DE LA CREACIÓN DE LA BASE DE DATOS
-        CargarDbTablaPareo();
+        //CargarDbTablaPareo();
         InicializarControles();
-        //startActivity(new Intent(this, PareoActivity.class));
     }
 
     //#CLASE DONDE SE CREABA LA BASE DE DATOS PAREO TU TE ENCARGASTE DE ESTO
-
+    /*
     private void CargarDbTablaPareo(){
         //LLAMADA DE END POINT PARA OBTENER DATOS
         //DECLARACIÓN DE LIST IGUAL AL DE RESPONSE PARA GUARDADO DE DATOS
@@ -80,7 +79,7 @@ public class PareoActivity extends AppCompatActivity {
                 int x=1;
             }
         });
-    }
+    }*/
 
     private void InicializarControles() {
         lstPareo = (ListView)findViewById(R.id.lstPareo1);
@@ -88,7 +87,7 @@ public class PareoActivity extends AppCompatActivity {
         btnpareo = (Button)findViewById(R.id.btnPareoSiguiente);
         prgbar = (ProgressBar) findViewById(R.id.pgrPareo);
         //#ESTE METODO ERA PARA GENERAR LA PREGUNTA ADENTRO EN LA CLASE PAREO LE INSERTAS LA TEMATICA ID
-        idPreguntaPareo = new Pareo().obtenerIdPreguntas(this);
+        //########idPreguntaPareo = #///ASIGNAR EL ID DE LA PREGUNTA AQUÍ;
         CargarListView();
         CargarListView2();
         AttachEvent();
