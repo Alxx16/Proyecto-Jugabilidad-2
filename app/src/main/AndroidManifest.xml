@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Jugabilidad2">
         <activity
-            android:name=".Jugabilidad2_Modo3"
+            android:name=".Jugabilidad2Modo3_Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

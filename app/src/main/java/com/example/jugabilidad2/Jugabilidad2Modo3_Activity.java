@@ -1,11 +1,13 @@
 package com.example.jugabilidad2;
 
 import android.os.Bundle;
+import android.widget.GridView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.jugabilidad2.Entidades.J2_PreguntasRespuestas;
+import com.example.jugabilidad2.Entidades.Preguntas;
 import com.example.jugabilidad2.Modelos.Jugabilidad2_PregResResponse;
 import com.example.jugabilidad2.Service.ApiService;
 import com.nex3z.flowlayout.FlowLayout;
@@ -17,10 +19,10 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class Jugabilidad2_Modo3 extends AppCompatActivity {
+public class Jugabilidad2Modo3_Activity extends AppCompatActivity {
 
     TextView jugabilidad2_txtPregunta;
-
+    GridView jugabilidad2_grdPalabras;
     FlowLayout sentenceLine;
     Jugabilidad2_PregResResponse pregResResponse;
 
@@ -45,7 +47,7 @@ public class Jugabilidad2_Modo3 extends AppCompatActivity {
                 List<Jugabilidad2_PregResResponse> listaPreguntas = response.body();
 
                 for(Jugabilidad2_PregResResponse Preguntas : listaPreguntas){
-                    J2_PreguntasRespuestas preguntas = new J2_PreguntasRespuestas(
+                    Preguntas preguntas = new Preguntas(
                             Preguntas.getModo_id(),
                             Preguntas.getTematica_id(),
                             Preguntas.getPregunta(),
@@ -53,7 +55,7 @@ public class Jugabilidad2_Modo3 extends AppCompatActivity {
                             Preguntas.getRetroalimentacion(),
                             Preguntas.getRespuesta()
                     );
-                    preguntas.preguntastInsert(getApplicationContext());
+                    preguntas.CANTIDAD_PREGUNTAS(getApplicationContext());
                 }
 
             }
@@ -68,6 +70,7 @@ public class Jugabilidad2_Modo3 extends AppCompatActivity {
     private void InicializarControles() {
         jugabilidad2_txtPregunta = (TextView)findViewById(R.id.jugabilidad2_txtPregunta);
         sentenceLine = (FlowLayout)findViewById(R.id.jugabilidad2_sentence_line);
+        jugabilidad2_grdPalabras = (GridView)findViewById(R.id.jugabilidad2_grdPalabras);
     }
 
 
@@ -89,7 +92,7 @@ public class Jugabilidad2_Modo3 extends AppCompatActivity {
         List<String> PreguntaOpcionCorrecta = new ArrayList<>();
         List<String> PreguntaOpcionIncorrecta = new ArrayList<>();
 
-        J2_PreguntasRespuestas pregResp = new J2_PreguntasRespuestas();
+        Preguntas pregResp = new Preguntas();
         int idAleatorio = pregResp.obtenerIdPreguntas(getApplicationContext());
 
 

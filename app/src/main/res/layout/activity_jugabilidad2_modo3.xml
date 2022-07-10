@@ -5,15 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    tools:context=".Jugabilidad2_Modo3"
+    tools:context=".Jugabilidad2Modo3_Activity"
     android:background="@drawable/fondo" ><!--Link -->
-
-    <!-- Home -->
-    <ImageButton
-        android:id="@+id/jugabilidad2_imbHome"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="@drawable/home_icono" /> <!--Link -->
 
     <!-- Bara de Progreso -->
     <ProgressBar
@@ -21,11 +14,7 @@
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:layout_marginLeft="20dp"
-        android:layout_toRightOf="@id/jugabilidad2_imbHome"
-        android:max="10"
-        android:minWidth="50dp"
-        android:minHeight="50dp"/>
+         />
 
     <!-- Titulo -->
     <TextView
@@ -53,7 +42,7 @@
 
     <!-- Boton para Sonido -->
     <ImageButton
-        android:id="@+id/jugabilidad2_imvVoz"
+        android:id="@+id/jugabilidad2_imbVoz"
         android:layout_width="26dp"
         android:layout_height="26dp"
         android:layout_below="@id/jugabilidad2_imvMascota"
@@ -91,21 +80,25 @@
 
         <View
             style="@style/split_line_horizontal"
-            android:layout_marginTop="50dp" />
+            android:layout_marginTop="15dp" />
 
         <View
             style="@style/split_line_horizontal"
-            android:layout_marginTop="105dp" />
+            android:layout_marginTop="60dp" />
     </FrameLayout>
 
-    <!-- Boton para continuar -->
+    <!-- Grid de respuestas -->
 
     <GridView
-        android:id="@+id/jugabilidad2_grdvPalabras"
+        android:id="@+id/jugabilidad2_grdPalabras"
         android:layout_width="wrap_content"
         android:layout_height="137dp"
         android:layout_below="@id/jugabilidad2_fmlRespuestas"
-        android:layout_marginTop="20dp"></GridView>
+        android:layout_marginTop="10dp"
+        android:numColumns="5" />
+    <!-- android:columnWidth="10dp"-->
+
+ <!-- Boton para continuar -->
 
     <Button
         android:id="@+id/jugabilidad2_btnConfirmar"
