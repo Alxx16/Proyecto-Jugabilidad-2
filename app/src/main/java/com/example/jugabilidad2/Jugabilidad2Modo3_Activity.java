@@ -5,26 +5,20 @@ import android.widget.GridView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.jugabilidad2.Entidades.J2_PreguntasRespuestas;
-import com.example.jugabilidad2.Entidades.Preguntas;
-import com.example.jugabilidad2.Modelos.Jugabilidad2_PregResResponse;
-import com.example.jugabilidad2.Service.ApiService;
+import com.example.jugabilidad2.Controllers.Jugabilidad;
+import com.example.jugabilidad2.Modelos.Preguntas;
+import com.example.jugabilidad2.Controllers.SharedPreferencesController;
 import com.nex3z.flowlayout.FlowLayout;
 
-import java.util.ArrayList;
 import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 public class Jugabilidad2Modo3_Activity extends AppCompatActivity {
 
     TextView jugabilidad2_txtPregunta;
     GridView jugabilidad2_grdPalabras;
     FlowLayout sentenceLine;
-    Jugabilidad2_PregResResponse pregResResponse;
+
+    SharedPreferencesController spp = new SharedPreferencesController();
 
     //Jugabilidad2_Palabras preguntas;
 
@@ -33,40 +27,11 @@ public class Jugabilidad2Modo3_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jugabilidad2_modo3);
        // InicializarControles();
-        cargarDbTablaPregunta();
-        cargarPreguntasRespuestas();
+        this.obtenerInfoPregunta();
 
       //  inicicializarDatos();
     }
-    //Cargar BD de la tabla que tendra todos los datos de la preguntas y respuestas.
-    private void cargarDbTablaPregunta(){
-        Call<List<Jugabilidad2_PregResResponse>> llamadaPregunta = ApiService.getApiService().getJ2_PreguntasRespuestas(1);
-        llamadaPregunta.enqueue(new Callback<List<Jugabilidad2_PregResResponse>>() {
-            @Override
-            public void onResponse(Call<List<Jugabilidad2_PregResResponse>> call, Response<List<Jugabilidad2_PregResResponse>> response) {
-                List<Jugabilidad2_PregResResponse> listaPreguntas = response.body();
-
-                for(Jugabilidad2_PregResResponse Preguntas : listaPreguntas){
-                    Preguntas preguntas = new Preguntas(
-                            Preguntas.getModo_id(),
-                            Preguntas.getTematica_id(),
-                            Preguntas.getPregunta(),
-                            Preguntas.getOpcion_resp(),
-                            Preguntas.getRetroalimentacion(),
-                            Preguntas.getRespuesta()
-                    );
-                    preguntas.CANTIDAD_PREGUNTAS(getApplicationContext());
-                }
-
-            }
-            @Override
-            public void onFailure(Call<List<Jugabilidad2_PregResResponse>> call, Throwable t) {
-                int x=1;
-            }
-        });
-    }
-
-
+    
     private void InicializarControles() {
         jugabilidad2_txtPregunta = (TextView)findViewById(R.id.jugabilidad2_txtPregunta);
         sentenceLine = (FlowLayout)findViewById(R.id.jugabilidad2_sentence_line);
@@ -88,23 +53,18 @@ public class Jugabilidad2Modo3_Activity extends AppCompatActivity {
     }
 
 
-    public void cargarPreguntasRespuestas(){
-        List<String> PreguntaOpcionCorrecta = new ArrayList<>();
-        List<String> PreguntaOpcionIncorrecta = new ArrayList<>();
+    private void obtenerInfoPregunta() {
+        Jugabilidad jugabildad = new Jugabilidad(this);
+        String ids = spp.leer(this,"preguntas_id");
+        String [] aux = ids.split(",");
+        int id = Integer.parseInt(aux[aux.length-1]);
 
-        Preguntas pregResp = new Preguntas();
-        int idAleatorio = pregResp.obtenerIdPreguntas(getApplicationContext());
+
+        //ARRAYLIST CON LOS DATOS DE LA PREGUNTA
+        List<Preguntas> preguntas = jugabildad.getPregunta(id);
 
 
-        PreguntaOpcionCorrecta= pregResp.obtenerDatosPregunta1(getApplicationContext(), idAleatorio);
-        PreguntaOpcionIncorrecta= pregResp.obtenerDatosPregunta2(getApplicationContext(), idAleatorio);
 
-        for (String model : PreguntaOpcionCorrecta) {
-            System.out.println(model);
-        }
-        for (String model : PreguntaOpcionIncorrecta) {
-            System.out.println(model);
-        }
 
 
     }

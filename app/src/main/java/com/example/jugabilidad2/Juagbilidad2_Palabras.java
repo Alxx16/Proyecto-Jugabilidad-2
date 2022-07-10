@@ -26,23 +26,6 @@ public class Juagbilidad2_Palabras extends AppCompatTextView {
         setTextAlignment(TEXT_ALIGNMENT_CENTER);
         setTextSize(20);
         setBackground(ContextCompat.getDrawable(getContext(), R.drawable.shape_jugabilidad2_cuadro_de_palabra));
-    }*/
-
-    //TAMPOCO LE HAGAS CASO A ESTO XD
-    //Colocar las respuestas en la linea
-    /*public void goToViewGroup(VistaPalabras vistaPalabras, FlowLayout sentenceLine) {
-
-        ViewParent parent = getParent();
-        //cuadrados de palabra estan en su lugar y van a la linea
-        if(parent instanceof VistaPalabras){
-            vistaPalabras.removerVistaPalabra(this);
-            sentenceLine.addView(this);
-        }else{
-            //cuadros de palabra de la linea regresan a su lugar
-            sentenceLine.removeView(this);
-            vistaPalabras.agregarVistaA(this);
-        }
-
-
     }
+
 }*/

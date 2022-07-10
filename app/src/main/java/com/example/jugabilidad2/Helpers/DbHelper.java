@@ -8,7 +8,7 @@ import com.example.jugabilidad2.R;
 
 public class DbHelper extends SQLiteOpenHelper {
 
-    private String preguntaRespuesta = "CREATE TABLE preguntaRespuesta (id INTEGER PRIMARY KEY AUTOINCREMENT, modo_id INTEGER, tematica_id INTEGER, pregunta TEXT, opcion_resp TEXT, retroalimentacion TEXT, respuesta INTEGER)";
+    private String Preguntas_respuestas = "CREATE TABLE preguntaRespuesta (id INTEGER PRIMARY KEY AUTOINCREMENT, modo_id INTEGER, tematica_id INTEGER, pregunta TEXT, opcion_resp TEXT, retroalimentacion TEXT, respuesta INTEGER)";
 
     public DbHelper(Context context, String dbName){
         super(context,dbName,null,1);
@@ -16,7 +16,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-       sqLiteDatabase.execSQL(preguntaRespuesta);
+       sqLiteDatabase.execSQL(Preguntas_respuestas);
     }
 
     @Override

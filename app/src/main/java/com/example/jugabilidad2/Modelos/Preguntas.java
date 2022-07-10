@@ -1,4 +1,4 @@
-package com.example.jugabilidad2.Controllers;
+package com.example.jugabilidad2.Modelos;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,7 +6,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.widget.Toast;
 
 import com.example.jugabilidad2.Helpers.DbHelper;
-//import com.example.jugablidad_1.Helper.DbHelper;
 
 import java.util.Collections;
 import java.util.List;
@@ -21,22 +20,6 @@ public class Preguntas {
     private int respuesta;
 
     public static final int CANTIDAD_PREGUNTAS = 10;
-
-    public Preguntas(int modo_id, int tematica_id, String pregunta, String opcion_resp, String retroalimentacion, int respuesta)
-    {}
-
-    public Preguntas(){}
-
-    public Preguntas(int id, int modo_id, int tematica_id, String pregunta, String opcion_resp, String retroalimentacion, int respuesta) {
-        this.id = id;
-        this.modo_id = modo_id;
-        this.tematica_id = tematica_id;
-        this.pregunta = pregunta;
-        this.opcion_resp = opcion_resp;
-        this.retroalimentacion = retroalimentacion;
-        this.respuesta = respuesta;
-    }
-
 
     public static void actualizarPreguntas(Context context) {
         DbHelper dbHelper = new DbHelper(context, "proyecto_ds6");
@@ -73,7 +56,6 @@ public class Preguntas {
         Collections.shuffle(preguntas);
         return preguntas;
     }
-
 
 
     public int getId() {
