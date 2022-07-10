@@ -1,4 +1,4 @@
-package com.example.jugabilidad2;
+/*package com.example.jugabilidad2;
 
 import android.content.Context;
 import android.view.ViewGroup;
@@ -26,11 +26,11 @@ public class Juagbilidad2_Palabras extends AppCompatTextView {
         setTextAlignment(TEXT_ALIGNMENT_CENTER);
         setTextSize(20);
         setBackground(ContextCompat.getDrawable(getContext(), R.drawable.shape_jugabilidad2_cuadro_de_palabra));
-    }
+    }*/
 
     //TAMPOCO LE HAGAS CASO A ESTO XD
     //Colocar las respuestas en la linea
-    public void goToViewGroup(VistaPalabras vistaPalabras, FlowLayout sentenceLine) {
+    /*public void goToViewGroup(VistaPalabras vistaPalabras, FlowLayout sentenceLine) {
 
         ViewParent parent = getParent();
         //cuadrados de palabra estan en su lugar y van a la linea
@@ -45,4 +45,4 @@ public class Juagbilidad2_Palabras extends AppCompatTextView {
 
 
     }
-}
+}*/

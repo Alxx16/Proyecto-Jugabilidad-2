@@ -1,4 +1,4 @@
-package com.example.jugabilidad2.Entidades;
+/*package com.example.jugabilidad2.Entidades;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.widget.Toast;
 
-import com.example.jugabilidad2.Helpers.DbHelper_Jugabilidad2_Modo3;
+import com.example.jugabilidad2.Helpers.DbHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -78,7 +78,7 @@ public class J2_PreguntasRespuestas {
     public boolean preguntastInsert(Context context){
         try{
             //Validacion de que campos en nullo o vacio
-            DbHelper_Jugabilidad2_Modo3 dbHelper = new DbHelper_Jugabilidad2_Modo3(context,"frograming");
+            DbHelper dbHelper = new DbHelper(context,"frograming");
             SQLiteDatabase db = dbHelper.getWritableDatabase();
             if(db!= null){
                 ContentValues content = new ContentValues();
@@ -104,7 +104,7 @@ public class J2_PreguntasRespuestas {
         int idAleatorio;
         try{
             //Validacion de que campos en nullo o vacio
-            DbHelper_Jugabilidad2_Modo3 dbHelper = new DbHelper_Jugabilidad2_Modo3(context,"frograming");
+            DbHelper dbHelper = new DbHelper(context,"frograming");
             SQLiteDatabase db = dbHelper.getReadableDatabase();
             if(db!= null){
                 String[] campos = new String[]{"id"};
@@ -122,8 +122,8 @@ public class J2_PreguntasRespuestas {
             Toast.makeText(context,"Errocito en select de ID PREGUNTAS =>"+e.getMessage(),Toast.LENGTH_LONG).show();
         }
         //RANDOMIZEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEER
-        Random rand = new Random();
-        idAleatorio=idPreguntas.get(rand.nextInt(idPreguntas.size()));
+        //Random rand = new Random();
+        idAleatorio=idPreguntas.get(new Random().nextInt(idPreguntas.size()));
         return idAleatorio;
     }
 
@@ -133,7 +133,7 @@ public class J2_PreguntasRespuestas {
         List<String> PreguntaOpcionCorrecta = new ArrayList<>();
         try{
             //Validacion de que campos en nullo o vacio
-            DbHelper_Jugabilidad2_Modo3 dbHelper = new DbHelper_Jugabilidad2_Modo3(context,"frograming");
+            DbHelper dbHelper = new DbHelper(context,"frograming");
             SQLiteDatabase db = dbHelper.getReadableDatabase();
             if(db!= null){
                 String[] campos = new String[]{"pregunta","opcion_resp","respuesta"};
@@ -160,7 +160,7 @@ public class J2_PreguntasRespuestas {
         List<String> PreguntaOpcionIncorrecta = new ArrayList<>();
         try{
             //Validacion de que campos en nullo o vacio
-            DbHelper_Jugabilidad2_Modo3 dbHelper = new DbHelper_Jugabilidad2_Modo3(context,"frograming");
+            DbHelper dbHelper = new DbHelper(context,"frograming");
             SQLiteDatabase db = dbHelper.getReadableDatabase();
             if(db!= null){
                 String[] campos = new String[]{"opcion_resp","respuesta"};
@@ -180,4 +180,4 @@ public class J2_PreguntasRespuestas {
         return PreguntaOpcionIncorrecta;
     }
 
-}
+}*/

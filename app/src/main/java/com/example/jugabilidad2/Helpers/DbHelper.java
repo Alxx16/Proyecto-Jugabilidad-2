@@ -6,11 +6,11 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.jugabilidad2.R;
 
-public class DbHelper_Jugabilidad2_Modo3 extends SQLiteOpenHelper {
+public class DbHelper extends SQLiteOpenHelper {
 
     private String preguntaRespuesta = "CREATE TABLE preguntaRespuesta (id INTEGER PRIMARY KEY AUTOINCREMENT, modo_id INTEGER, tematica_id INTEGER, pregunta TEXT, opcion_resp TEXT, retroalimentacion TEXT, respuesta INTEGER)";
 
-    public DbHelper_Jugabilidad2_Modo3(Context context, String dbName){
+    public DbHelper(Context context, String dbName){
         super(context,dbName,null,1);
     }
 

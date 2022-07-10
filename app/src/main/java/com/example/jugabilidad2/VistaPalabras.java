@@ -1,4 +1,4 @@
-package com.example.jugabilidad2;
+/*package com.example.jugabilidad2;
 
 import android.content.Context;
 import android.view.View;
@@ -47,4 +47,4 @@ public class VistaPalabras extends FlowLayout {
     public boolean empty() {
         return words.isEmpty();
     }
-}
+}*/

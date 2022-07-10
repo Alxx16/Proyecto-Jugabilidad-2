@@ -23,7 +23,6 @@ public class Jugabilidad2_Modo3 extends AppCompatActivity {
 
     FlowLayout sentenceLine;
     Jugabilidad2_PregResResponse pregResResponse;
-    VistaPalabras vistaPalabras;
 
     //Jugabilidad2_Palabras preguntas;
 
@@ -31,10 +30,11 @@ public class Jugabilidad2_Modo3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jugabilidad2_modo3);
-        InicializarControles();
+       // InicializarControles();
         cargarDbTablaPregunta();
+        cargarPreguntasRespuestas();
 
-        inicicializarDatos();
+      //  inicicializarDatos();
     }
     //Cargar BD de la tabla que tendra todos los datos de la preguntas y respuestas.
     private void cargarDbTablaPregunta(){
@@ -95,6 +95,13 @@ public class Jugabilidad2_Modo3 extends AppCompatActivity {
 
         PreguntaOpcionCorrecta= pregResp.obtenerDatosPregunta1(getApplicationContext(), idAleatorio);
         PreguntaOpcionIncorrecta= pregResp.obtenerDatosPregunta2(getApplicationContext(), idAleatorio);
+
+        for (String model : PreguntaOpcionCorrecta) {
+            System.out.println(model);
+        }
+        for (String model : PreguntaOpcionIncorrecta) {
+            System.out.println(model);
+        }
 
 
     }
