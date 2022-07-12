@@ -3,15 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/Desktop/DSVI Desarollo Jugabilidad 2/Proyecto-Jugabilidad-2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.273" />
+        <entry key="..\:/Users/User/Desktop/DSVI Desarollo Jugabilidad 2/Proyecto-Jugabilidad-2/app/src/main/res/drawable/ic_fondo.xml" value="0.273" />
+        <entry key="..\:/Users/User/Desktop/DSVI Desarollo Jugabilidad 2/Proyecto-Jugabilidad-2/app/src/main/res/drawable/ic_home_icono.xml" value="0.273" />
+        <entry key="..\:/Users/User/Desktop/DSVI Desarollo Jugabilidad 2/Proyecto-Jugabilidad-2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.273" />
+        <entry key="..\:/Users/User/Desktop/DSVI Desarollo Jugabilidad 2/Proyecto-Jugabilidad-2/app/src/main/res/drawable/progress_bar_jugabilidades.xml" value="0.2265" />
+        <entry key="..\:/Users/User/Desktop/DSVI Desarollo Jugabilidad 2/Proyecto-Jugabilidad-2/app/src/main/res/drawable/shape_jugabilidad2_correcto.xml" value="0.387" />
+        <entry key="..\:/Users/User/Desktop/DSVI Desarollo Jugabilidad 2/Proyecto-Jugabilidad-2/app/src/main/res/drawable/shape_jugabilidad2_general.xml" value="0.387" />
+        <entry key="..\:/Users/User/Desktop/DSVI Desarollo Jugabilidad 2/Proyecto-Jugabilidad-2/app/src/main/res/drawable/shape_jugabilidad2_incorrecto.xml" value="0.387" />
+        <entry key="..\:/Users/User/Desktop/DSVI Desarollo Jugabilidad 2/Proyecto-Jugabilidad-2/app/src/main/res/drawable/shape_jugabilidad2_seleccionaropcion.xml" value="0.387" />
+        <entry key="..\:/Users/User/Desktop/DSVI Desarollo Jugabilidad 2/Proyecto-Jugabilidad-2/app/src/main/res/drawable/shapes_jugabilidad_2.xml" value="0.387" />
+        <entry key="..\:/Users/User/Desktop/DSVI Desarollo Jugabilidad 2/Proyecto-Jugabilidad-2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/User/Desktop/DSVI Desarollo Jugabilidad 2/Proyecto-Jugabilidad-2/app/src/main/res/layout/activity_pareo.xml" value="0.21979166666666666" />
+        <entry key="..\:/Users/User/Desktop/DSVI Desarollo Jugabilidad 2/Proyecto-Jugabilidad-2/app/src/main/res/layout/pareolistview_template.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/User/Desktop/DSVI P/Proyecto-Jugabilidad-2/app/src/main/res/drawable/ic_home_icono.xml" value="0.15" />
+        <entry key="..\:/Users/User/Desktop/DSVI P/Proyecto-Jugabilidad-2/app/src/main/res/drawable/shape_jugabilidad2_correcto.xml" value="0.1525" />
+        <entry key="..\:/Users/User/Desktop/DSVI P/Proyecto-Jugabilidad-2/app/src/main/res/drawable/shape_jugabilidad2_general.xml" value="0.1" />
+        <entry key="..\:/Users/User/Desktop/DSVI P/Proyecto-Jugabilidad-2/app/src/main/res/drawable/shape_jugabilidad2_incorrecto.xml" value="0.1525" />
+        <entry key="..\:/Users/User/Desktop/DSVI P/Proyecto-Jugabilidad-2/app/src/main/res/drawable/shape_jugabilidad2_seleccionaropcion.xml" value="0.1" />
+        <entry key="..\:/Users/User/Desktop/DSVI P/Proyecto-Jugabilidad-2/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/User/Desktop/DSVI P/Proyecto-Jugabilidad-2/app/src/main/res/layout/activity_pareo.xml" value="0.25" />
+        <entry key="..\:/Users/User/Desktop/DSVI P/Proyecto-Jugabilidad-2/app/src/main/res/layout/pareo_view.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/User/Desktop/DSVI P/Proyecto-Jugabilidad-2/app/src/main/res/layout/pareolistview_template.xml" value="0.3265625" />
+        <entry key="..\:/Users/User/Desktop/Jugablidad_1/app/src/main/res/layout/activity_pareo.xml" value="0.203125" />
         <entry key="..\:/Users/eidig/AndroidStudioProjects/Jugabilidad2/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/jairs/OneDrive/Escritorio/Semestral de DSVI/Proyecto-Jugabilidad-2/app/src/main/res/layout/activity_jugabilidad2_retroalimentacion.xml" value="0.2" />
-        <entry key="..\:/Users/jairs/OneDrive/Escritorio/Semestral de DSVI/Proyecto-Jugabilidad-2/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/jairs/OneDrive/Escritorio/Semestral de DSVI/Proyecto-Jugabilidad-2/app/src/main/res/layout/retoalimentacion_incorrecta.xml" value="0.25" />
-        <entry key="..\:/Users/jairs/OneDrive/Escritorio/Semestral de DSVI/Proyecto-Jugabilidad-2/app/src/main/res/layout/retroalimentacion.xml" value="0.2" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
